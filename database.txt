@@ -1,0 +1,46 @@
+------------------------------------
+Patients
+------------------------------------
+patient_id	INT ( primary key)
+first_name	TEXT
+last_name	TEXT
+gender	CHAR(1)
+birth_date	DATE
+city	TEXT
+province_id	CHAR(2) ( foreign key)
+allergies	TEXT
+height	INT
+weight	INT
+-------------------------------------
+
+
+
+------------------------------------
+Admission
+------------------------------------
+patient_id	INT (foreign key)
+admission_date	DATE
+discharge_date	DATE
+diagnosis	TEXT
+attending_doctor_id	INT (foreign key)
+-------------------------------------
+
+
+
+------------------------------------
+Doctors
+------------------------------------
+doctor_id	INT ( primary key)
+first_name	TEXT
+last_name	TEXT
+specialty	TEXT
+-------------------------------------
+
+
+
+------------------------------------
+Provinces_names
+------------------------------------
+province_id	CHAR(2) (primary key)
+province_name	TEXT
+-------------------------------------
